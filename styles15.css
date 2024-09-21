@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #3498db;
+}
+
+section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Box Styling */
+div {
+    width: 150px;
+    height: 150px;
+    background-color: #e67e22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+/* Translate Transform */
+.translate-box {
+    background-color: #2ecc71;
+    transform: translateX(0);
+}
+
+.translate-box:hover {
+    transform: translateX(100px);
+}
+
+/* Rotate Transform */
+.rotate-box {
+    background-color: #e74c3c;
+    transform: rotate(0deg);
+}
+
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+
+/* Scale Transform */
+.scale-box {
+    background-color: #9b59b6;
+    transform: scale(1);
+}
+
+.scale-box:hover {
+    transform: scale(1.5);
+}
+
+/* Skew Transform */
+.skew-box {
+    background-color: #f39c12;
+    transform: skew(0deg, 0deg);
+}
+
+.skew-box:hover {
+    transform: skew(20deg, 10deg);
+}
+
+/* Combined Transform */
+.combined-box {
+    background-color: #1abc9c;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+}
+
+.combined-box:hover {
+    transform: translate(50px, -30px) rotate(25deg) scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

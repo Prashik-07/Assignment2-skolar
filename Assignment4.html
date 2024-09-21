@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1> CSS Box Model Demonstration</h1>
+    </header>
+
+    <section class="content-box-example">
+        <h2>Content-Box Model</h2>
+        <div class="box content-box">
+            <p>This box uses  <strong>content-box</strong> model. Padding and borders are added outside the content width.</p>
+        </div>
+    </section>
+
+    <section class="border-box-example">
+        <h2>Border-Box Model</h2>
+        <div class="box border-box">
+            <p>This box uses the <strong>border-box</strong> model. The padding and borders are included in the box's width and height.</p>
+        </div>
+    </section>
+
+    <section class="box-effects-example">
+        <h2>Padding, Border, and Margin Effects</h2>
+        <div class="box effect-box padding-only">
+            <p>Padding Only</p>
+        </div>
+        <div class="box effect-box border-only">
+            <p>Border Only</p>
+        </div>
+        <div class="box effect-box margin-only">
+            <p>Margin Only</p>
+        </div>
+        <div class="box effect-box padding-border-margin">
+            <p>Padding, Border, and Margin</p>
+        </div>
+    </section>
+
+    <footer>
+        <p> CSS Box Model and its effects using different elements.</p>
+    </footer>
+</body>
+</html>

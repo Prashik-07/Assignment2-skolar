@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+section {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Transition on Color */
+.color-box {
+    color: #333;
+    transition: color 0.5s ease-in-out; /* Transition on the text color */
+}
+
+.color-box:hover {
+    color: #3498db; /* Changes to blue on hover */
+}
+
+/* Transition on Background Color */
+.bg-box {
+    width: 300px;
+    height: 100px;
+    background-color: #e67e22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background-color 0.6s ease-out; /* Smooth background color transition */
+}
+
+.bg-box:hover {
+    background-color: #9b59b6; /* Changes to purple on hover */
+}
+
+/* Transition on Width and Height */
+.size-box {
+    width: 200px;
+    height: 100px;
+    background-color: #1abc9c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: width 0.8s ease-in, height 0.8s ease-in-out; /* Separate transitions for width and height */
+}
+
+.size-box:hover {
+    width: 300px; /* Expands width on hover */
+    height: 150px; /* Expands height on hover */
+}
+
+/* Multiple Transitions on Different Properties */
+.multi-box {
+    width: 200px;
+    height: 100px;
+    background-color: #e74c3c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: width 0.7s ease-in-out, height 0.7s ease-in-out, background-color 0.7s ease-in, color 0.7s ease-in;
+    /* Multiple properties transition */
+}
+
+.multi-box:hover {
+    width: 350px; /* Expands width */
+    height: 150px; /* Expands height */
+    background-color: #34495e; /* Changes background color */
+    color: #ecf0f1; /* Changes text color */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

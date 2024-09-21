@@ -1,0 +1,183 @@
+/* Basic Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #2980b9;
+    padding: 30px 20px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Main Flex Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    gap: 30px; /* Larger gap for advanced look */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Left Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px; /* Increased flexibility */
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for elevated look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hover effect */
+}
+
+.sidebar-item {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #d35400;
+}
+
+/* Content Area */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 3 1 700px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-item {
+    flex: 1 1 calc(33.33% - 20px); /* Responsive grid for larger screens */
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.content-item:hover {
+    background-color: #2980b9;
+    transform: translateY(-10px); /* Subtle lift on hover */
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    order: -1; /* Reorders the sidebar */
+}
+
+.right-sidebar-item {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.right-sidebar-item:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 992px) {
+    .content-item {
+        flex: 1 1 calc(50% - 20px); /* 2-column layout for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-flex {
+        flex-direction: column;
+    }
+
+    .content-item {
+        flex: 1 1 100%; /* Single column layout for smaller screens */
+    }
+
+    .sidebar, .right-sidebar {
+        order: 0; /* Reset the order for small screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .sidebar-item, .right-sidebar-item, .content-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

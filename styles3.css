@@ -1,0 +1,144 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Styles */
+
+/* Font Family Examples */
+.font-family-example {
+    margin-bottom: 30px;
+}
+
+.lobster-font {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.roboto-mono-font {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Font Size Examples */
+.font-size-example {
+    margin-bottom: 30px;
+}
+
+.small-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.medium-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.large-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Font Weight Examples */
+.font-weight-example {
+    margin-bottom: 30px;
+}
+
+.light-text {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.regular-text {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.bold-text {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Font Style and Text Transform */
+.font-style-example {
+    margin-bottom: 30px;
+}
+
+.italic-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+/* Line Height Examples */
+.line-height-example {
+    margin-bottom: 30px;
+}
+
+.normal-line-height {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.tall-line-height {
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

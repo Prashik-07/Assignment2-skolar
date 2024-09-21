@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Outer Grid Container */
+.outer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3-column layout */
+    grid-template-rows: auto 1fr auto; /* Rows for header, content, and footer */
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid Areas */
+.header {
+    grid-area: header;
+    background-color: #1abc9c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #3498db;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Aside spans two rows in the grid */
+.aside {
+    grid-area: aside;
+    background-color: #e67e22;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Nested Grid in the Main Area */
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 2-column nested grid */
+    grid-template-rows: 1fr 1fr; /* 2 rows */
+    grid-template-areas: 
+        "nested-main nested-sidebar"
+        "nested-main nested-extra";
+    grid-gap: 20px;
+}
+
+/* Nested Grid Items */
+.nested-main {
+    grid-area: nested-main;
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nested-sidebar {
+    grid-area: nested-sidebar;
+    background-color: #9b59b6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nested-extra {
+    grid-area: nested-extra;
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .outer-grid {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+    
+    .nested-grid {
+        grid-template-columns: 1fr; /* Single column layout for nested grid */
+        grid-template-areas: 
+            "nested-main"
+            "nested-sidebar"
+            "nested-extra";
+    }
+}

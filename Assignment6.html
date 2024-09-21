@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Flexbox Layout</title>
+    <link rel="stylesheet" href="styles6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Advanced Flexbox Layout</h1>
+        <p>Advanced features: </p>
+    </header>
+
+    <section class="main-container">
+        <!-- Main Flex Container -->
+        <div class="container main-flex">
+            <!-- Left Sidebar (Nested Flex Container) -->
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <div class="sidebar-item">Item 1</div>
+                <div class="sidebar-item">Item 2</div>
+                <div class="sidebar-item">Item 3</div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content">
+                <h2>Main Content</h2>
+                <div class="content-item">Content Block 1</div>
+                <div class="content-item">Content Block 2</div>
+                <div class="content-item">Content Block 3</div>
+                <div class="content-item">Content Block 4</div>
+                <div class="content-item">Content Block 5</div>
+            </div>
+
+            <!-- Right Sidebar (Reordered with Flex) -->
+            <div class="right-sidebar">
+                <h2>Right Sidebar</h2>
+                <div class="right-sidebar-item">Right Item 1</div>
+                <div class="right-sidebar-item">Right Item 2</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> advanced Flexbox features.</p>
+    </footer>
+
+</body>
+</html>

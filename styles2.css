@@ -1,0 +1,109 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+/* Color and Background-Color */
+.colored-text {
+    color: #e74c3c; /* Red text */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.background-colored-text {
+    background-color: #f1c40f; /* Yellow background */
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Gradients */
+.linear-gradient-box {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.radial-gradient-box {
+    background: radial-gradient(circle, #1abc9c, #16a085);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* Background Image Properties */
+.background-image {
+    background-image: url('https://via.placeholder.com/800x600');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.repeating-background-image {
+    background-image: url('https://via.placeholder.com/100');
+    background-repeat: repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 40px;
+}

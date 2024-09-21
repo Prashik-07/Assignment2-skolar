@@ -1,0 +1,70 @@
+/* Element selector */
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+/* Class selector */
+.description {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.item {
+    color: green;
+    margin-top: 10px;
+}
+
+/* ID selector */
+#main-heading {
+    font-size: 32px;
+    color: #d35400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid #bdc3c7;
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Footer style */
+.footer {
+    margin-top: 40px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
